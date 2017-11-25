@@ -1,18 +1,18 @@
 
 ## Avoid SELECT *
 
-It is a good habit to always specify which columns you need when you are doing your SELECT's.
-// not preferred
-$r = mysql_query("SELECT * FROM user WHERE user_id = 1");
-$d = mysql_fetch_assoc($r);
-echo "Welcome {$d['username']}";
+It is a good habit to always specify which columns you need when you are doing your SELECT's. <br />
+// not preferred <br />
+$r = mysql_query("SELECT * FROM user WHERE user_id = 1"); <br />
+$d = mysql_fetch_assoc($r); <br />
+echo "Welcome {$d['username']}"; <br />
  
-// better:
-$r = mysql_query("SELECT username FROM user WHERE user_id = 1");
-$d = mysql_fetch_assoc($r);
-echo "Welcome {$d['username']}";
+// better: <br />
+$r = mysql_query("SELECT username FROM user WHERE user_id = 1"); <br />
+$d = mysql_fetch_assoc($r); <br />
+echo "Welcome {$d['username']}"; <br />
  
-// the differences are more significant with bigger result sets
+// the differences are more significant with bigger result sets <br />
 
 
 ## Use NOT NULL If You Can
