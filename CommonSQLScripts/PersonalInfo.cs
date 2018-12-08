@@ -15,6 +15,10 @@ namespace Repository.Models
         public string MobileNo { get; set; }
         public string NID { get; set; }
         public string Email { get; set; }
+        public string CreationUser { get; set; }
+        public DateTime CreationDateTime { get; set; }
+        public string LastUpdateUser { get; set; }
+        public DateTime LastUpdateDateTime { get; set; }
         public byte Status { get; set; }
     }
 }
